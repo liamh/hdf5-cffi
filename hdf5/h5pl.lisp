@@ -12,10 +12,10 @@
 
 (in-package #:hdf5)
 
-(include "sys/time.h")
+(cffi:defcfun "H5PLget_loading_state" herr-t
+  "http://www.hdfgroup.org/HDF5/doc/RM/RM_H5PL.html#Plugin-GetLoadingState"
+  (plugin-flags (:pointer :int)))
 
-(ctype hdf5::size-t  "size_t")
-
-(ctype hdf5::time-t  "time_t")
-
-(ctype hdf5::off-t  "off_t")
+(cffi:defcfun "H5PLset_loading_state" herr-t
+  "http://www.hdfgroup.org/HDF5/doc/RM/RM_H5PL.html#Plugin-SetLoadingState"
+  (plugin-type :int))

@@ -1,4 +1,6 @@
-;;;; Copyright by The HDF Group.                                              
+;;;; -*- Mode: lisp; indent-tabs-mode: nil -*-
+;;;;
+;;;; Copyright by The HDF Group.
 ;;;; All rights reserved.
 ;;;;
 ;;;; This file is part of hdf5-cffi.
@@ -247,4 +249,4 @@
 (cffi:defcfun "H5Pset_userblock" herr-t
   "http://www.hdfgroup.org/HDF5/doc/RM/RM_H5P.html#Property-SetUserblock"
   (plist hid-t)
-  (size  size-t))
+  (size  hsize-t))

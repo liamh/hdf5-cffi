@@ -1,4 +1,6 @@
-;;;; Copyright by The HDF Group.                                              
+;;;; -*- Mode: lisp; indent-tabs-mode: nil -*-
+;;;;
+;;;; Copyright by The HDF Group.
 ;;;; All rights reserved.
 ;;;;
 ;;;; This file is part of hdf5-cffi.
@@ -10,7 +12,7 @@
 
 (include "hdf5.h")
 
-(in-package :hdf5)
+(in-package #:hdf5)
 
 (cc-flags "-lhdf5")
 
@@ -18,7 +20,6 @@
 (constant (+H5F-ACC-RDWR+    "H5F_ACC_RDWR"))
 (constant (+H5F-ACC-TRUNC+   "H5F_ACC_TRUNC"))
 (constant (+H5F-ACC-EXCL+    "H5F_ACC_EXCL"))
-(constant (+H5F-ACC-DEBUG+   "H5F_ACC_DEBUG"))
 (constant (+H5F-ACC-CREAT+   "H5F_ACC_CREAT"))
 (constant (+H5F-ACC-DEFAULT+ "H5F_ACC_DEFAULT"))
 

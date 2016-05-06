@@ -10,12 +10,14 @@
 ;;;; If you do not have access to this file, you may request a copy from
 ;;;; help@hdfgroup.org.
 
+(include "hdf5.h")
+
 (in-package #:hdf5)
 
-(include "sys/time.h")
+(cenum h5pl-type-t
+  ((:H5PL-TYPE-ERROR  "H5PL_TYPE_ERROR"))
+  ((:H5PL-TYPE-FILTER "H5PL_TYPE_FILTER"))
+  ((:H5PL-TYPE-NONE   "H5PL_TYPE_NONE")))
 
-(ctype hdf5::size-t  "size_t")
-
-(ctype hdf5::time-t  "time_t")
-
-(ctype hdf5::off-t  "off_t")
+(constant (+H5PL-FILTER-PLUGIN+ "H5PL_FILTER_PLUGIN"))
+(constant (+H5PL-ALL-PLUGIN+    "H5PL_ALL_PLUGIN"))

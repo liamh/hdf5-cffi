@@ -625,4 +625,19 @@
 	   h5pset-scaleoffset
 	   h5pset-shuffle
 	   h5pset-szip
-	   h5pset-userblock))
+	   h5pset-userblock
+
+	   ;; == h5im ==========================================================
+
+	   #:h5imget-image-info
+	   #:h5imget-npalettes
+	   #:h5imget-palette
+	   #:h5imget-palette-info
+	   #:h5imis-image
+	   #:h5imis-palette
+	   #:h5imlink-palette
+	   #:h5immake-image-24bit
+	   #:h5immake-image-8bit
+	   #:h5immake-palette
+	   #:h5imread-image
+	   #:h5imunlink-palette))

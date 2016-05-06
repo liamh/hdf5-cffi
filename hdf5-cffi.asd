@@ -48,7 +48,8 @@
 			 (cffi-grovel:grovel-file "h5z-grovel")
 			 (:file "h5z")
 			 (cffi-grovel:grovel-file "h5p-grovel")
-			 (:file "h5p")))))
+			 (:file "h5p")
+			 (:file "h5im")))))
 
 (asdf:defsystem hdf5-examples
   :serial t
